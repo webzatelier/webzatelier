@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webz - Automated Agency to Engineer Transformative Simplicity">
+    <title>Webz - Automated Agency</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">Webz</a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <a href="#contact" class="btn btn--primary">Book a meeting</a>
+                
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content animate">
+                <h1 class="animate delay-1">Automated Agency to Engineer Transformative Simplicity</h1>
+                <p class="animate delay-2">Webz navigates the complexities of the industry for you to ensure exceptional business development</p>
+                <div class="hero-cta animate delay-3">
+                    <a href="#contact" class="btn btn--accent">Automate your business</a>
+                </div>
+            </div>
+        </section>
+            
+        <!-- Services Section -->
+        <section id="services" class="services section">
+            <div class="container text-center">
+                <h2 class="section-title">Our Services</h2>
+                <p>We design, develop, and implement automations tools that help you work smarter, faster, and more efficiently</p>
+            </div>
+                
+            <div class="services-list">
+                <div class="service-item animate delay-1" onclick="toggleService('workflow')">
+                    <h3>Workflow Automation</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="service-description" id="workflow-description">
+                    <p>Our automation connects smoothly with your existing systems, reducing manual work and boosting efficiency from day one.</p>
+                </div>
+                
+                <div class="service-item animate delay-2" onclick="toggleService('ai-agent')">
+                    <h3>AI Agent Assistant</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="service-description" id="ai-agent-description">
+                    <p>From managing calendars to drafting emails and summarizing meetings, our AI assistants work around the clock to keep your business running smarter and faster.</p>
+                </div>
+                
+                <div class="service-item animate delay-3" onclick="toggleService('custom')">
+                    <h3>Custom Projects</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="service-description" id="custom-description">
+                    <p>Whether you're starting from scratch or enhancing an existing system, we offer strategic consulting and develop custom AI projects aligned with your unique goals.</p>
+                </div>
+                
+                <div class="service-item animate delay-4" onclick="toggleService('software')">
+                    <h3>Software Development</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="service-description" id="software-description">
+                    <ul>
+                        <li>Custom Software Development</li>
+                        <li>Web Development</li>
+                        <li>AI/ML Development</li>
+                        <li>Maintenance & Support</li>
+                    </ul>
+                </div>
+            </div>
+                
+                <div class="text-center mt-8 animate delay-4">
+                    <a href="services.html" class="btn btn--primary">Learn More</a>
+                </div>
+            </div>
+        </section>
+            
+            <!-- Our Story Section -->
+            <section id="story" class="section">
+                <div class="container text-center">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="story-text">
+                        Meet the founders and discover their journey through industry complexities navigating its challenges to drive your business forward and empower its exceptional growth.
+                    </p>
+                    <div class="animate delay-2 story-button-spacing">
+                        <a href="about.html" class="btn btn--primary">Dive in</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <div class="container">
+                    <div class="contact-wrapper">
+                        <div class="contact-content">
+                            <h2 class="section-title" style="text-align: left !important; margin: 0 0 1.5rem 1.25rem !important;">Ready to Transform Your Business?</h2>
+                            <p class="section-subtitle" style="font-size: 1.25rem !important; color: #6b7280 !important; max-width: 600px !important; margin: 0 0 2.5rem -1rem !important; text-align: left !important; text-transform: none !important;">Let's explore how intelligent automation can simplify your processes, optimize performance, and elevate your entire operation. Automate smarter, scale faster, and discover the shift with Webz.</p>
+                        </div>
+                        
+                        <form id="contact-form" class="contact-form">
+                            <h3>Send us a message</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="company">Business type</label>
+                                    <input type="text" id="company" name="company" placeholder="Enter your business type">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Project Details *</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Tell us about your project, goals, and timeline..." required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    I'd like to receive updates about Webz services and news
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn--accent animate delay-3">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="section">
+                <div class="container text-center">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Find answers to common questions about our services and process</p>
+                    
+                    <div class="faq-list">
+                        <div class="faq-item animate delay-1">
+                            <h3 class="faq-question" onclick="toggleFAQ('faq1')">
+                                How can AI automation help my business?
+                                <i class="fas fa-chevron-down"></i>
+                            </h3>
+                            <div class="faq-answer" id="faq1">
+                                <p>AI automation eliminates repetitive tasks, improves efficiency, and reduces errors. It allows your team to focus on high-value work while increasing productivity and lowering operational costs.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item animate delay-2">
+                            <h3 class="faq-question" onclick="toggleFAQ('faq2')">
+                                What industries can benefit from AI automation?
+                                <i class="fas fa-chevron-down"></i>
+                            </h3>
+                            <div class="faq-answer" id="faq2">
+                                <p>AI automation is beneficial across various industries, including marketing, sales, finance, healthcare, customer support, and operations. Any business looking to improve efficiency can leverage AI.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item animate delay-3">
+                            <h3 class="faq-question" onclick="toggleFAQ('faq3')">
+                                Do I need technical knowledge to use AI automation?
+                                <i class="fas fa-chevron-down"></i>
+                            </h3>
+                            <div class="faq-answer" id="faq3">
+                                <p>Not at all! Our platform is user-friendly and built for all skill levels. We provide onboarding, tutorials, and customer support to ensure you can easily navigate and use the system.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item animate delay-4">
+                            <h3 class="faq-question" onclick="toggleFAQ('faq4')">
+                                What kind of support do you offer?
+                                <i class="fas fa-chevron-down"></i>
+                            </h3>
+                            <div class="faq-answer" id="faq4">
+                                <p>We offer comprehensive support, including onboarding assistance, troubleshooting, and ongoing updates. Our team is available to help with any questions or technical issues you may have.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Contact Section -->
+            <section class="faq-contact-section">
+                <div class="container text-center">
+                    <h2 class="faq-contact-title">Still have questions?</h2>
+                    <p class="faq-contact-description">We're here to help you get started with AI automation</p>
+                    <a href="#contact" class="btn btn--accent">Get in Touch</a>
+                </div>
+            </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">Webz</a>
+                    <p class="footer-tagline">Transform your visions into digital reality</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/webzatelier" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/webz-atelier-248851389/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://x.com/webzateilier" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1bAJum4FG5/" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@webzatelier" target="_blank" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#story">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact animate">
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><a href="mailto:webzatelier@gmail.com"><i class="fas fa-envelope"></i> webzatelier@gmail.com</a></li>
+                        <li><a href="tel:+201010446457"><i class="fas fa-phone"></i> +20 101 044 6457</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Based in Egypt - Serving worldwide</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="year"></span> Webz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="./scripts/main.js"></script>
+</body>
+</html>
+    </script>
+</body>
+</html>
